@@ -1,0 +1,29 @@
+{
+  "name": "argoconnect",
+  "version": "1.0.0",
+  "description": "Argoconnect - Smart Farmer Marketplace with AI Assistant",
+  "main": "server/server.js",
+  "scripts": {
+    "setup": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "farming",
+    "marketplace",
+    "telugu-ai",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Argoconnect Team",
+  "license": "MIT"
+}

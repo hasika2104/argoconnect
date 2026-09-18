@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Build output
+dist/
+build/
+client/dist/
+
+# Logs & Temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.tmp
+
+# Multer Uploads (keep directory structure if needed)
+server/public/uploads/*
+!server/public/uploads/.gitkeep
